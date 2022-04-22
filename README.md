@@ -7,11 +7,21 @@ PasswordLocker is a python application that allows a user to create an account a
 The sole author of this project is Jidraph Kimachia
 
 # SetUp 
-The project is run onl on the terminal since it lacks a GUI. run through the run.py module
+The project is run only on the terminal since it lacks a GUI. run through the run.py module
+
+# Live link
+The application lacks a Live Link since its lacks a graphical user interface
 
 # Technologies used
 The project is solely build using Python and edited with Visual Studio Code as the editor
 
+
 # Bugs reported
-At the time of deployment, the application had no visible/technical bugs 
+At the time of deployment, the application had no visible/technical bugs. If any bugs are spotted while running the application, reach out to the author.
+
 # Contact info
+For further suggestions and collaborations, contact:
+* jidraphkimachia1@gmail.com
+* jidraph.kimachia@student.moringaschool.com
+
+
