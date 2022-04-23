@@ -32,7 +32,21 @@ class TestUser(unittest.TestCase):
         self.new_user.save_user() #saving the new user
         self.assertEqual(len(User.user_list),1)
 
+    def test_delete_user(self):
+        """test_delete_user test to test if we are able delete our user
+        """
+        self.new_user_save.user()
+        test_user = User("Fawz", "6720")
+        test_user.save_user()
 
+        self.new_user.delete_user() # to delete a user
+        self.assertEqual(len(User.user_list), 1)
+
+    def test_display_user(self):
+        '''
+        method that returns a list of all contacts saved
+        '''
+        self.assertEqual(User.display_name(),User.user_list)
 
 
 if __name__ == '__main__':
