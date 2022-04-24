@@ -143,7 +143,27 @@ def main():
                 password = input()  
 
         while True:
-            print("Input ")
+            print("Input the following the shortcodes to perfrom various actions in your Password Locker accounts: ")
+            print("ad - To add a new password")
+            print("vw - To view our passwords")
+            print("del - To delete your passwords")
+            print("cc - To make Password Locker generate you a password for any of your accounts")
+            print("ex - To exit")
+            short_code = input("Enter your short code here: ")
+
+            if short_code == "ad":
+                print("Enter your the account whose password you want to store, e.g Snapchat" )
+                print("Account Name: ")
+                account_name = input()
+                print("Enter the password for the account you have just entered ")
+                account_password = input()
+                print("\n")
+                print("You have successfully added a password to your account!")
+                print(f"Account: {account_name}  Password: {account_password}")
+                print("\n")
+                save_credentials(create_credentials(account_name, account_password))
+
+
 
 
 
