@@ -149,6 +149,8 @@ def main():
             print("cc - To make Password Locker generate you a password for any of your accounts")
             print("ex - To exit")
             short_code = input("Enter your short code here: ")
+            
+ #add new password
 
             if short_code == "ad":
                 print("Enter your the account whose password you want to store, e.g Snapchat" )
@@ -162,6 +164,7 @@ def main():
                 print("\n")
                 save_credentials(create_credentials(account_name, account_password))
 
+# delete existing users
             elif short_code == "del":
                 print("Enter the account name you want to delete below, e.g Twitter")
                 search_account = input()
@@ -170,6 +173,7 @@ def main():
                 print("\n")
                 print(f"Your account for {search_account.account_name} has been deleted successfully!")
                 
+# exit from the app
             elif short_code == "ex":    
                 print("Thank you for using Password Locker!")
                 print("BYE")
