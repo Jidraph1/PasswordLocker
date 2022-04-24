@@ -170,9 +170,10 @@ def main():
                 print("\n")
                 print(f"Your account for {search_account.account_name} has been deleted successfully!")
                 
-
-
-
+            elif short_code == "ex":    
+                print("Thank you for using Password Locker!")
+                print("BYE")
+            break        
 
 if __name__ == '__main__':
 
