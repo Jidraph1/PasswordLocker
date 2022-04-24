@@ -161,6 +161,14 @@ def main():
                 print(f"Account: {account_name}  Password: {account_password}")
                 print("\n")
                 save_credentials(create_credentials(account_name, account_password))
+
+            elif short_code == "del":
+                print("Enter the account name you want to delete below, e.g Twitter")
+                search_account = input()
+                search_account = get_credentials(account_name)
+                delete_credentials(get_credentials(account_name))
+                print("\n")
+                print(f"Your account for {search_account.account_name} has been deleted successfully!")
                 
 
 
