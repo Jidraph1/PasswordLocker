@@ -33,9 +33,10 @@ class TestUser(unittest.TestCase):
         self.assertEqual(len(User.user_list),1)
 
     def test_delete_user(self):
-        """test_delete_user test to test if we are able delete our user
         """
-        self.new_user_save.user()
+        test_delete_user test to test if we are able delete our user
+        """
+        self.new_user.save_user()
         test_user = User("Fawz", "6720")
         test_user.save_user()
 
@@ -47,6 +48,27 @@ class TestUser(unittest.TestCase):
         method that returns a list of all contacts saved
         '''
         self.assertEqual(User.display_name(),User.user_list)
+
+class TestCredentials(unittest.TestCase):
+    """
+    Test class that defines test cases for the credentials class behaviours
+    
+    Args:
+    Unittest.Testcase. Testcase class that helps in creating test cases
+    """
+
+    def tearDown(self):
+        """
+        TearDown cleans up after each test case
+        """
+        Credentials.credentials_list = []
+
+    def setUp(self):
+         """
+         SetUp method to run before each test cases
+         """
+         
+
 
 
 if __name__ == '__main__':

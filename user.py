@@ -24,3 +24,9 @@ class User:
         """
         User.user_list.remove(self)
 
+    @classmethod
+    def display_name(cls):
+        """
+        method to display names from the user_list
+        """
+        return cls.user_list
