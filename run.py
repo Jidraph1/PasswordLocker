@@ -145,7 +145,6 @@ def main():
         while True:
             print("Input the following the shortcodes to perfrom various actions in your Password Locker accounts: ")
             print("ad - To add a new password")
-            print("vw - To view our passwords")
             print("del - To delete your passwords")
             print("cc - To make Password Locker generate you a password for any of your accounts")
             print("ex - To exit")
@@ -162,18 +161,7 @@ def main():
                 print(f"Account: {account_name}  Password: {account_password}")
                 print("\n")
                 save_credentials(create_credentials(account_name, account_password))
-
-
-
-
-
-
-
-
                 
-
-
-
 
 
 
