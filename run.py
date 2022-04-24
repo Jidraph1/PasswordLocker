@@ -53,3 +53,14 @@ def display_credentials():
     """
 
     return Credentials.display_credentials()
+
+
+def main():
+    print("\n")
+    print("Hello, Welcome to password locker. What is your name?")
+    name = input()
+    print = (f"Nice to meet you {name}. \n")
+    print = ("Pls use the following short codes to navigate through the application")
+
+    if __name__ == '__main__':
+        main()
