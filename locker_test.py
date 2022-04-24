@@ -67,8 +67,32 @@ class TestCredentials(unittest.TestCase):
          """
          SetUp method to run before each test cases
          """
-         
+         self.new_cred = Credentials("instagram", "2020") #created new credentials and password
 
+    def test_save_credentials(self):
+        """"
+    test_save_credentials test case to test if the credentials object is saved to the credentials list
+    """
+        self.new_cred.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
+
+    def test_delete_credentials(self):
+            '''
+            test_delete_credentials to test if we can remove a cred from our cred list
+            '''
+            self.new_cred.save_credentials()
+            test_cred = Credentials("Instagram","2020")
+            test_cred.save_credentials()
+
+            self.new_cred.delete_credentials()
+            self.assertEqual(len(Credentials.credentials_list),1)
+            
+    def test_display_credentials(self):
+            '''
+        method that returns a list of all credentials saved
+        '''
+
+            self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
 
 
 if __name__ == '__main__':
