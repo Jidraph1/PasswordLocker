@@ -1,4 +1,4 @@
-#!usr/bin/env python3.8
+#!/usr/bin/env python3.8
 from user import User
 from credentials import Credentials
 import random
@@ -56,11 +56,11 @@ def display_credentials():
 
 
 def main():
-    print("\n")
     print("Hello, Welcome to password locker. What is your name?")
     name = input()
-    print = (f"Nice to meet you {name}. \n")
-    print = ("Pls use the following short codes to navigate through the application")
+    print(f"Nice to meet you {name}. \n")
+    print("Pls use the following short codes to navigate through the application")
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
+
         main()
