@@ -22,6 +22,13 @@ def delete_user(user):
     """
     user.delete_user()
 
+def login_user(username, password):
+    """
+    A function that verifies a user login
+    """
+    check_user = User.verify_login(username, password)
+    return check_user
+
 def create_credentials(account_name, account_password):
     """
     Function to create new credentials
@@ -116,7 +123,30 @@ def main():
 #Log In if you already have an account
 
         elif short_code == "lg":
-            
+            print("Welcome back to Password Locker!")
+            print("Enter your details for you to log in your account")
+            print("Enter your username")
+            username = input()
+            print("Enter password")
+            password = input()
+            login = login_user(username, password)
+
+            if login_user == login:
+                print("\n")
+                print(f"Welcome {username} to your Password Locker account. Your password is {password}.")
+                print("You can be able to interact with your passwords here.")       
+            else:
+                print("Invalid username or password. Please try again or first create an account.")
+                print("Enter username")
+                username = input()
+                print("Enter password")
+                password = input()  
+
+        while True:
+            print("Input ")
+
+
+
 
 
 
