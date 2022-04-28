@@ -163,6 +163,17 @@ def main():
                 print(f"Account: {account_name}  Password: {account_password}")
                 print("\n")
                 save_credentials(create_credentials(account_name, account_password))
+                
+#generate new random password
+            elif short_code == "cc":
+                print("Thank you for choosing us to help you generate your password.")
+                print("To begin, enter the account you wish to have a password, e.g Twitter, and we will generate a new password for you")
+                account_name = input()
+                account_password = random.randint(1000, 9999)
+                print("\n")
+                print(f"Your generated password is {account_password}")
+                save_credentials(create_credentials(account_name, account_password)) 
+                print("\n")   
 
 # delete existing users
             elif short_code == "del":
